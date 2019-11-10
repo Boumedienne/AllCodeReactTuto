@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {formatName,getGreeting,Clock} from './user'
+import {formatName,getGreeting,Clock,Toggle} from './user'
 function Welcome(props){
 return <h1>Hello, {props.name}</h1>
 }
@@ -18,6 +18,7 @@ function App() {
 <div></div>
   <Welcome name="Sra"/>
   <Welcome name="Hamoud"/>
+  <Toggle/>
   <div></div>
     </>
 
