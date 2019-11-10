@@ -12,3 +12,11 @@ export function getGreeting(user) {
     }
     return <h1>Hello, Stranger.</h1>;
   }
+
+  export function tick(){
+return (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+    </div>)
+  }
