@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {formatName,getGreeting,tick} from './user'
+import {formatName,getGreeting,Clock} from './user'
 function Welcome(props){
 return <h1>Hello, {props.name}</h1>
 }
@@ -14,7 +14,7 @@ function App() {
     <>
     <div>{formatName(user)}</div>
   <div>{getGreeting()}</div>
-<div>{tick()}</div>
+<Clock date={new Date()}/>
 <div></div>
   <Welcome name="Sra"/>
   <Welcome name="Hamoud"/>
